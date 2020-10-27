@@ -56,29 +56,43 @@ h1{
 .product-container{
     width: 100%;
     max-width: 1000px;
-    margin: 35px auto 0;
+    margin: 40px auto 0 ;
     display:flex;
     flex-wrap: wrap;
-    column-gap: 15px;
+    column-gap: 20px;
     row-gap: 30px;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 .product{
-    max-width: 300px;
+    
     display: flex;
     flex-direction: column;
+    border-radius: 7px;
+    cursor: pointer;
+    overflow: hidden;
 }
 .img-container{
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
 }
 img{
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
-    
+    height: 100%;
 }
 .main-body{
-    background-color: red;
-    
+    background-color:white;
+    color: black;
+    padding: 25px 15px ;
+}
+h3{
+    letter-spacing: 1.3px;
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 17px;
 }
