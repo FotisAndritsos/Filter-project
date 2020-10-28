@@ -102,4 +102,8 @@ p{
     font-size: 16px;
     font-weight: 600;
     margin-top: 17px;
+    color: #7d7c83;
+}
+.btn.yo{
+    color: yellow;
 }
