@@ -56,7 +56,7 @@ h1{
 .product-container{
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto 0 ;
+    margin: 40px auto  ;
     display:flex;
     flex-wrap: wrap;
     column-gap: 20px;

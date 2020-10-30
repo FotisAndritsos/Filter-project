@@ -30,14 +30,14 @@ let products = [
     {
         id:5,
         desc:"Caual shirt",
-        img:"/images/revolt-164_6wVEHfI-unsplash.jpg",
+        img:"/images/milad-shams-LUCWiFdK1rs-unsplash.jpg",
         category:"Shirt",
         price:47,
     },
     {
         id:6,
         desc:"Shirt on and go",
-        img:"/images/revolt-164_6wVEHfI-unsplash.jpg",
+        img:"/images/nathan-van-de-graaf-K33_mCu8qek-unsplash.jpg",
         category:"Shirt",
         price:67,
     }
