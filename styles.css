@@ -56,12 +56,12 @@ h1{
 .product-container{
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto  ;
-    display:flex;
+    margin: 40px auto;
+    display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 30px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 .product{

@@ -44,17 +44,24 @@ let products = [
     
 ]
 const productContainer = document.querySelector('.product-container');
-const btns = document.querySelectorAll('button');
+const btnContainer = document.querySelector('.btn-container');
+
 
 window.addEventListener('DOMContentLoaded', () => {
-    let yo = products.map(product => {
+    displayProductItems(products);
+    displayProductBtns();
+    
+});
+
+const displayProductItems = (productItems) =>{
+    let yo = productItems.map(productItem => {
         return`<div class="product">
                     <div class="img-container">
-                    <img src="${product.img}" alt="">
+                    <img src="${productItem.img}" alt="">
                     </div>
                     <div class="main-body">
-                        <h3>${product.desc}</h3>
-                        <p>Price<span> ${product.price}&#8364</span></p>
+                        <h3>${productItem.desc}</h3>
+                        <p>Price<span> ${productItem.price}&#8364</span></p>
                     </div>
                 </div>
              `;
@@ -62,10 +69,33 @@ window.addEventListener('DOMContentLoaded', () => {
         // console.log(yo);
         yo = yo.join("");
         productContainer.innerHTML = yo;
-});
-btns.forEach(btn => {
-    btn.addEventListener('click',(e)=>{
-        let targItem = e.target.dataset.id;
-        
+}
+const displayProductBtns = () =>{
+    const categories = products.reduce((values,item)=>{
+        if (!values.includes(item.category)){
+            values.push(item.category);
+        }
+        return values;
+    },['All']);
+    const categoryBtns = categories.map(category =>{
+        return `<button class="btn" data-id=${category}>${category}</button> `;
     })
-});
+    .join("");
+    btnContainer.innerHTML = categoryBtns;
+    const btns = document.querySelectorAll('button');
+    btns.forEach(btn => {
+        btn.addEventListener('click',(e)=>{
+            let category = e.currentTarget.dataset.id;
+            let productCategory = products.filter(productItem =>{
+                if (productItem.category === category){
+                    return productItem;
+                }
+            })
+            if(category === "All"){
+                displayProductItems(products);
+            }else {
+                displayProductItems(productCategory);
+            }
+        })
+    });
+}
