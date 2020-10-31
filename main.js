@@ -3,14 +3,14 @@ let products = [
         id:1,
         desc:"Nike Air max",
         img:"/images/sharon-mccutcheon-wx3JOq0Xbh4-unsplash.jpg",
-        category:"Tshirt",
+        category:"T-shirt",
         price:170,
     },
     {
         id:2,
         desc:"Nike Air max super",
         img :"/images/marcel-j-uWrCdB5sM-unsplash.jpg",
-        category:"Tshirt",
+        category:"T-shirt",
         price:122,
     },
     {

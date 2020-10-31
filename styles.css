@@ -105,3 +105,8 @@ p{
 .btn.yo{
     color: yellow;
 }
+@media only screen and (max-width:960px){
+    .product-container{
+        justify-content: center;
+    }
+}
