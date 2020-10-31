@@ -66,10 +66,10 @@ const displayProductItems = (productItems) =>{
                 </div>
              `;
 });
-        // console.log(yo);
         yo = yo.join("");
         productContainer.innerHTML = yo;
 }
+
 const displayProductBtns = () =>{
     const categories = products.reduce((values,item)=>{
         if (!values.includes(item.category)){

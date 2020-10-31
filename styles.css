@@ -24,14 +24,15 @@ h1{
     margin-top: 20px;
 }
 .btn-container{
-    padding: 25px 0;
     width: 100%;
-    max-width: 1000px;
+    padding: 25px 0;
     margin: 10px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     /* justify-content: space-evenly; */
+    row-gap: 8px;
 }
 
 .btn{
@@ -55,30 +56,27 @@ h1{
 }
 .product-container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 950px;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 30px;
-    justify-content: center;
     align-items: center;
 }
 .product{
-    
     display: flex;
     flex-direction: column;
     border-radius: 7px;
     cursor: pointer;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 .product:hover img{
     transform: scale(1.2);
 }
 .img-container{
     width: 300px;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
     
 }
@@ -101,7 +99,7 @@ p{
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 17px;
+    margin-top: 14px;
     color: #7d7c83;
 }
 .btn.yo{
